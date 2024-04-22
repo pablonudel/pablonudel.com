@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+main,
+#root {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overscroll-behavior-y: none;
+	background: #19191d;
+}
+
+.sicons .social-svg-mask {
+	fill: white !important;
+}
+.sicons:hover .social-svg-mask {
+	fill: #b7b7e5 !important;
+}

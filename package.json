@@ -1,0 +1,39 @@
+{
+	"name": "v1",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@fontsource-variable/comfortaa": "^5.0.19",
+		"@gsap/react": "^2.1.0",
+		"@react-three/drei": "^9.88.7",
+		"@react-three/fiber": "^8.15.8",
+		"@react-three/postprocessing": "2.15",
+		"gsap": "^3.12.5",
+		"maath": "^0.10.7",
+		"postprocessing": "6.35",
+		"react": "^18.2.0",
+		"react-animated-cursor": "^2.11.2",
+		"react-dom": "^18.2.0",
+		"react-social-icons": "^6.16.0",
+		"split-type": "^0.3.4",
+		"three": "^0.158.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.56",
+		"@types/react-dom": "^18.2.19",
+		"@vitejs/plugin-react": "^4.2.1",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "^0.5.14",
+		"tailwindcss": "^3.4.3",
+		"vite": "^5.1.4"
+	}
+}
