@@ -5,8 +5,8 @@ import ReactDOM from "react-dom/client"
 import { Canvas } from "@react-three/fiber"
 import { EffectComposer, Bloom } from "@react-three/postprocessing"
 import { Environment } from "@react-three/drei"
-// import { Analytics } from "@vercel/analytics/react"
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Experience from "./Experience"
 import Interface from "./components/Interface"
 import Loading from "./components/Loading"
@@ -17,8 +17,8 @@ document.title = `Pablo Nudel • ${translate("title", "Front-End Developer")}`
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		{/* <Analytics />
-		<SpeedInsights /> */}
+		<Analytics />
+		<SpeedInsights />
 		{window.innerWidth > 1279 && (
 			<AnimatedCursor
 				innerSize={12}
