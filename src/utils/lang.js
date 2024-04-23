@@ -26,6 +26,21 @@ const translations = {
 	download: { es: "Descarga mi CV", fr: "Téléchargez mon CV" },
 }
 
+export const cvLang = {
+	en: {
+		label: "en",
+		file: "./cv/Pablo Nudel - Front-End Dev - en.pdf",
+	},
+	es: {
+		label: "es",
+		file: "./cv/Pablo Nudel - Front-End Dev - es.pdf",
+	},
+	fr: {
+		label: "fr",
+		file: "./cv/Pablo Nudel - Front-End Dev - fr.pdf",
+	},
+}
+
 export function translate(transObj, string) {
 	if (translations[transObj][userLang]) return translations[transObj][userLang]
 	return string

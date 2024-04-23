@@ -1,42 +1,20 @@
 import { useState, useEffect } from "react"
-import { userLang, translate } from "../utils/lang"
+import { userLang, translate, cvLang } from "../utils/lang"
 
 export default function DownloadBtn() {
-	const languages = {
-		en: {
-			label: "en",
-			file: "./cv/Pablo Nudel - Front-End Dev - en.pdf",
-		},
-		es: {
-			label: "es",
-			file: "./cv/Pablo Nudel - Front-End Dev - es.pdf",
-		},
-		fr: {
-			label: "fr",
-			file: "./cv/Pablo Nudel - Front-End Dev - fr.pdf",
-		},
-	}
 	const [lang, setLang] = useState({})
 
 	useEffect(() => {
-		if (languages[userLang]) {
-			setLang(languages[userLang])
-		} else {
-			setLang(languages.en)
-		}
+		cvLang[userLang] ? setLang(cvLang[userLang]) : setLang(cvLang.en)
 	}, [])
 
 	const changeCVFile = () => {
-		const k = Object.keys(languages)
+		const k = Object.keys(cvLang)
 		const i = k.indexOf(lang.label)
 		const l = k.length - 1
 
-		if (i < l) {
-			const nextLang = k[i + 1]
-			setLang(languages[nextLang])
-		} else {
-			setLang(languages.en)
-		}
+		const nextLang = k[i + 1]
+		i < l ? setLang(cvLang[nextLang]) : setLang(cvLang.en)
 	}
 
 	return (
@@ -50,12 +28,12 @@ export default function DownloadBtn() {
 			</a>
 			<button
 				onClick={changeCVFile}
-				className='pointer-events-auto mb-5 flex w-[75px] items-center justify-between rounded-e-full border-2 border-l-0 border-[#b7b7e5] bg-[#b7b7e5] px-3 py-2 text-[#252530] transition-all active:bg-white'
+				className='pointer-events-auto mb-5 flex w-[65px] items-center justify-between rounded-e-full border-2 border-l-0 border-[#b7b7e5] bg-[#b7b7e5] px-3 py-2 text-[#252530] transition-all active:border-white active:bg-white'
 			>
-				<p className='text-sm font-bold uppercase'>{lang.label}</p>
+				<span className=' text-sm font-bold uppercase'>{lang.label}</span>
 				<img
 					src='./fonts/arrows-up-down-svgrepo-com.svg'
-					className='ml-3 inline w-2'
+					className='ml-2 inline w-2'
 				/>
 			</button>
 		</div>

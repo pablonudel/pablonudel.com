@@ -5,9 +5,9 @@ import {
 	Center,
 	useVideoTexture,
 } from "@react-three/drei"
-import ScreenText from "./ScreenText"
-import { geometry } from "maath"
 import { extend } from "@react-three/fiber"
+import { geometry } from "maath"
+import ScreenText from "./ScreenText"
 
 extend(geometry)
 

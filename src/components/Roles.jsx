@@ -1,7 +1,7 @@
+import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import SplitType from "split-type"
-import { useRef } from "react"
 import { translate } from "../utils/lang"
 
 gsap.registerPlugin(useGSAP)

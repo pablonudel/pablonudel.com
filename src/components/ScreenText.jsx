@@ -1,6 +1,6 @@
+import { useRef, useState, useEffect } from "react"
 import { Float, Text3D } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
-import { useRef, useState, useEffect } from "react"
 import * as THREE from "three"
 
 export default function ScreenText() {
@@ -58,11 +58,9 @@ export default function ScreenText() {
 
 	useFrame((state, delta) => {
 		screenText.current.children.forEach((children, index) => {
-			if (move) {
-				moveLetters(children, index, 1.3, ["x", "y", "z"], 1.5, 6, delta)
-			} else {
-				moveLetters(children, index, 1, ["x", "y", "z"], 0, 1, delta)
-			}
+			move
+				? moveLetters(children, index, 1.3, ["x", "y", "z"], 1.5, 6, delta)
+				: moveLetters(children, index, 1, ["x", "y", "z"], 0, 1, delta)
 		})
 	})
 

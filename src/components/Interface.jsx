@@ -1,8 +1,7 @@
-import "../index.css"
-import { SocialIcon } from "react-social-icons"
-import Roles from "./Roles"
 import { translate } from "../utils/lang"
+import Roles from "./Roles"
 import DownloadBtn from "./DownloadBtn"
+import SIcon from "./SIcon"
 
 export default function Interface() {
 	return (
@@ -22,31 +21,9 @@ export default function Interface() {
 				</p>
 				<DownloadBtn />
 				<div className='pointer-events-auto flex justify-center gap-x-3 xl:justify-start '>
-					<SocialIcon
-						url='https://www.linkedin.com/in/pablonudel/'
-						target='_blank'
-						bgColor='currentColor'
-						fgColor='transparent'
-						style={{ height: 30, width: 30 }}
-						className='sicons'
-					/>
-					<SocialIcon
-						url='https://github.com/pablonudel'
-						target='_blank'
-						bgColor='currentColor'
-						fgColor='transparent'
-						style={{ height: 30, width: 30 }}
-						className='sicons'
-					/>
-					<SocialIcon
-						network='email'
-						href='mailto:pablonudel@gmail.com'
-						target='_blank'
-						bgColor='currentColor'
-						fgColor='transparent'
-						style={{ height: 30, width: 30 }}
-						className='sicons'
-					/>
+					<SIcon url='https://www.linkedin.com/in/pablonudel/' />
+					<SIcon url='https://github.com/pablonudel' />
+					<SIcon network={"email"} href='mailto:pablonudel@gmail.com' />
 				</div>
 			</div>
 		</div>

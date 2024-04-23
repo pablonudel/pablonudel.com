@@ -1,19 +1,7 @@
 import { useFrame, useThree } from "@react-three/fiber"
 import * as THREE from "three"
-
 import Desktop from "./components/Desktop"
-import { GradientTexture } from "@react-three/drei"
-
-export function GradientCircle({ position, radio, stops, colors, rotation }) {
-	return (
-		<mesh position={position} rotation={rotation}>
-			<circleGeometry args={[radio, 64]} />
-			<meshBasicMaterial>
-				<GradientTexture stops={stops} colors={colors} />
-			</meshBasicMaterial>
-		</mesh>
-	)
-}
+import GradientCircle from "./components/GradientCircle"
 
 export default function Experience() {
 	const { size } = useThree(state => state)
@@ -27,6 +15,7 @@ export default function Experience() {
 		if (1280 <= window.innerWidth && window.innerWidth < 1536) return 0
 		return 0.1
 	}
+
 	const Ypos = () => {
 		if (window.innerWidth < 640) return 4
 		return 3
@@ -36,13 +25,11 @@ export default function Experience() {
 	document.addEventListener("touchmove", CursorPos)
 
 	function CursorPos(e) {
-		if (e.type === "touchmove") {
-			cursor.x = e.touches[0].clientX / size.width - 0.5
-			cursor.y = e.touches[0].clientY / size.height - 0.5
-		} else {
-			cursor.x = e.clientX / size.width - 0.5
-			cursor.y = e.clientY / size.height - 0.5
-		}
+		e.type === "touchmove"
+			? ((cursor.x = e.touches[0].clientX / size.width - 0.5),
+				(cursor.y = e.touches[0].clientY / size.height - 0.5))
+			: ((cursor.x = e.clientX / size.width - 0.5),
+				(cursor.y = e.clientY / size.height - 0.5))
 	}
 
 	useFrame((state, delta) => {
