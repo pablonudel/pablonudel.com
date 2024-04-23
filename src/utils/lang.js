@@ -4,6 +4,7 @@ export const userLang = (navigator.language || navigator.userLanguage).slice(
 )
 
 const translations = {
+	title: { es: "Desarrollador Front-End", fr: "Développeur Front-End" },
 	hi: { es: "Hola! soy", fr: "Salut ! Je suis" },
 	roles: {
 		es: [

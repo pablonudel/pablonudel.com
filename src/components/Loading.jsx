@@ -15,7 +15,7 @@ export default function Loading() {
 						progress === 100 && `opacity-0`
 					} transition-opacity duration-500`}
 				>
-					<span className='text-3xl'>{progress}%</span>
+					<span className='text-3xl'>{Math.round(progress, 1)}%</span>
 					<br />
 					<span className='text-md text-cyan-600'>Loaded</span>
 				</p>
