@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 			}}
 		>
 			<color args={["#19191d"]} attach='background' />
-			<Environment background={false} preset='apartment' />
+			{/* <Environment background={false} preset='apartment' /> */}
 			<EffectComposer disableNormalPass>
 				<Bloom mipmapBlur />
 			</EffectComposer>

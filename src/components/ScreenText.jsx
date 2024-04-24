@@ -82,7 +82,8 @@ export default function ScreenText() {
 								position={[index * 0.45, 0, 0]}
 							>
 								{letter}
-								<meshStandardMaterial color={[0.4, 0.4, 0.8]} wireframe />
+								{/* <meshStandardMaterial color={[0.4, 0.4, 0.8]} wireframe /> */}
+								<meshNormalMaterial wireframe />
 							</Text3D>
 						</Float>
 					)
