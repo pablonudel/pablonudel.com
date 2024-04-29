@@ -4,7 +4,6 @@ import React, { Suspense } from "react"
 import ReactDOM from "react-dom/client"
 import { Canvas } from "@react-three/fiber"
 import { EffectComposer, Bloom } from "@react-three/postprocessing"
-import { Environment } from "@react-three/drei"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Experience from "./Experience"
@@ -39,7 +38,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 			}}
 		>
 			<color args={["#19191d"]} attach='background' />
-			{/* <Environment background={false} preset='apartment' /> */}
 			<EffectComposer disableNormalPass>
 				<Bloom mipmapBlur />
 			</EffectComposer>

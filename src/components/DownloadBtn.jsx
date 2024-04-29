@@ -1,13 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { userLang, translate, cvLang } from "../utils/lang"
 
 export default function DownloadBtn() {
-	const [lang, setLang] = useState({})
-
-	useEffect(() => {
-		cvLang[userLang] ? setLang(cvLang[userLang]) : setLang(cvLang.en)
-	}, [])
-
+	const [lang, setLang] = useState(() =>
+		cvLang[userLang] ? cvLang[userLang] : cvLang.en
+	)
 	const changeCVFile = () => {
 		const k = Object.keys(cvLang)
 		const i = k.indexOf(lang.label)

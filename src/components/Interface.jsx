@@ -17,7 +17,8 @@ export default function Interface() {
 			</div>
 			<div>
 				<p className='mb-10 italic text-white'>
-					{translate("comingSoon", "New website coming soon!")}
+					{translate("comingSoon", "New website coming soon!")}{" "}
+					<span className='text-xl'>&#128640;</span>
 				</p>
 				<DownloadBtn />
 				<div className='pointer-events-auto flex justify-center gap-x-3 xl:justify-start '>
