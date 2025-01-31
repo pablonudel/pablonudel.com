@@ -10,7 +10,7 @@ export default function Roles({ className }) {
 	const container = useRef()
 
 	const titles = translate("roles", [
-		"Front-end developer",
+		"JR Web Developer",
 		"Illustrator",
 		"Motion Designer",
 		"Graphic Designer",

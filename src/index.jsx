@@ -12,7 +12,7 @@ import Loading from "./components/Loading"
 import AnimatedCursor from "react-animated-cursor"
 import { translate } from "./utils/lang"
 
-document.title = `Pablo Nudel • ${translate("title", "Front-End Developer")}`
+document.title = `Pablo Nudel • ${translate("title", "Jr Web Developer")}`
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>

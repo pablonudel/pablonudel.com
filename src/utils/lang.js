@@ -4,17 +4,17 @@ export const userLang = (navigator.language || navigator.userLanguage).slice(
 )
 
 const translations = {
-	title: { es: "Desarrollador Front-End", fr: "Développeur Front-End" },
+	title: { es: "Desarrollador Web Jr", fr: "Développeur Web Jr" },
 	hi: { es: "Hola! soy", fr: "Salut ! Je suis" },
 	roles: {
 		es: [
-			"Desarrollador Front-End",
+			"Desarrollador Web Jr",
 			"Ilustrador",
 			"Diseñador Motion Graphics",
 			"Diseñador Gráfico",
 		],
 		fr: [
-			"Développeur Front-End",
+			"Développeur Web Jr",
 			"Illustrateur",
 			"Motion Designer",
 			"Designer Graphiste",
@@ -30,15 +30,15 @@ const translations = {
 export const cvLang = {
 	en: {
 		label: "en",
-		file: "./cv/Pablo Nudel - Front-End Dev - en.pdf",
+		file: "./cv/Pablo_Nudel-Jr_Web_Developer.pdf",
 	},
 	es: {
 		label: "es",
-		file: "./cv/Pablo Nudel - Front-End Dev - es.pdf",
+		file: "./cv/Pablo_Nudel-Desarrollador_Web_Jr.pdf",
 	},
 	fr: {
 		label: "fr",
-		file: "./cv/Pablo Nudel - Front-End Dev - fr.pdf",
+		file: "./cv/Pablo_Nudel-Développeur_Web_Jr.pdf",
 	},
 }
 
