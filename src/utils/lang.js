@@ -25,15 +25,15 @@ const translations = {
 export const cvLang = {
 	en: {
 		label: "en",
-		file: "./cv/Pablo_Nudel-Web_Developer.pdf",
+		file: "./cv/Pablo_Nudel-Fullstack_Developer.pdf",
 	},
 	es: {
 		label: "es",
-		file: "./cv/Pablo_Nudel-Desarrollador_Web.pdf",
+		file: "./cv/Pablo_Nudel-Desarrollador_Fullstack.pdf",
 	},
 	fr: {
 		label: "fr",
-		file: "./cv/Pablo_Nudel-Développeur_Web.pdf",
+		file: "./cv/Pablo_Nudel-Développeur_Fullstack.pdf",
 	},
 }
 
