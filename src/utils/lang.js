@@ -33,7 +33,7 @@ export const cvLang = {
 	},
 	fr: {
 		label: "fr",
-		file: "./cv/Pablo_Nudel-Développeur_Fullstack.pdf",
+		file: "./cv/Pablo_Nudel-Développeur_Fullstack.pdf",
 	},
 }
 
